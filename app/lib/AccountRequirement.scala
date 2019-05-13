@@ -22,7 +22,7 @@ import Implicits._
 
 object AccountRequirements {
 
-  val All = Seq(FullNameRequirement, TwoFactorAuthRequirement, SponsorRequirement)
+  val All = Seq(TwoFactorAuthRequirement, SponsorRequirement)
 
   val RequirementsByLabel = All.map(r => r.issueLabel -> r).toMap
 
